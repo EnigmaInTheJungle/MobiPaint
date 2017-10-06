@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilePaint.iOS", "MobilePa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilePaint", "MobilePaint\MobilePaint\MobilePaint.csproj", "{2019F4B2-3B19-4DD7-A694-B736C89C3CEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{77FB600E-22B8-40FE-8297-528BC3867D72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,18 @@ Global
 		{2019F4B2-3B19-4DD7-A694-B736C89C3CEF}.Release|iPhone.Build.0 = Release|Any CPU
 		{2019F4B2-3B19-4DD7-A694-B736C89C3CEF}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{2019F4B2-3B19-4DD7-A694-B736C89C3CEF}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{77FB600E-22B8-40FE-8297-528BC3867D72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77FB600E-22B8-40FE-8297-528BC3867D72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77FB600E-22B8-40FE-8297-528BC3867D72}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{77FB600E-22B8-40FE-8297-528BC3867D72}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{77FB600E-22B8-40FE-8297-528BC3867D72}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{77FB600E-22B8-40FE-8297-528BC3867D72}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{77FB600E-22B8-40FE-8297-528BC3867D72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77FB600E-22B8-40FE-8297-528BC3867D72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77FB600E-22B8-40FE-8297-528BC3867D72}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{77FB600E-22B8-40FE-8297-528BC3867D72}.Release|iPhone.Build.0 = Release|Any CPU
+		{77FB600E-22B8-40FE-8297-528BC3867D72}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{77FB600E-22B8-40FE-8297-528BC3867D72}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
