@@ -22,13 +22,21 @@ namespace MobilePaint.Droid
         private LeftMenuToggler mDrawerToggle;
         private DrawerLayout mDrawerLayout;
         private ListView mLeftDrawer;
+        private DrawPanel drawPanel;
+        public XCommand Command { get; set; }
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
+            Command = new XCommand();
+
+
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
+
+            drawPanel = FindViewById<DrawPanel>(Resource.Id.drawFiheld);
+            drawPanel.command = Command;
 
             mToolbar = FindViewById<SupportToolbar>(Resource.Id.toolbar);
             SetSupportActionBar(mToolbar);
@@ -43,13 +51,14 @@ namespace MobilePaint.Droid
             Dictionary<string, string[]> menu = new Dictionary<string, string[]>();
             menu.Add("File", new string[] { "New", "Open", "Save", "Save as..", "Save in cloud", "Load from cloud", "Exit" });
             menu.Add("Window", new string[] { "Rename", "Close", "Close all"});
+            menu.Add("Figure", new string[] { "Line", "Rectangle", "Ellipse" });
             menu.Add("Plugins", new string[] { "Simple Figure", "Figure with text"});
             menu.Add("Skins", new string[] { "Dark", "Light", "Pink"});
             menu.Add("Language", new string[] { "English", "Ukrainian", "Russian"});
             menu.Add("Help", new string[] { "About..", "Show help.."});
 
 
-            mLeftDrawer.Adapter = new CustomAdapter(this, menu);
+            mLeftDrawer.Adapter = new CustomAdapter(Command,this, menu);
 
             mDrawerToggle = new LeftMenuToggler(
                 this,                           //Host Activity

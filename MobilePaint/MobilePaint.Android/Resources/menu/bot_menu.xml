@@ -1,34 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:myapp="http://schemas.android.com/apk/res-auto">
-
+  
   <item android:id="@+id/action_newtab"
     android:icon="@drawable/ic_newtab"
+        android:orderInCategory="1"
     android:title="NewTab"
     myapp:showAsAction="always"/>
 
   <item android:id="@+id/action_color"
     android:icon="@drawable/ic_color"
+    android:orderInCategory="2"
     android:title="Color"
     myapp:showAsAction="always"/>
 
   <item android:id="@+id/action_figure"
     android:icon="@drawable/ic_figure"
+        android:orderInCategory="3"
     android:title="Figure"
     myapp:showAsAction="always"/>
 
   <item android:id="@+id/action_width"
     android:icon="@drawable/ic_width"
+        android:orderInCategory="4"
     android:title="Width"
     myapp:showAsAction="always"/>
 
   <item android:id="@+id/action_text"
     android:icon="@drawable/ic_text"
+        android:orderInCategory="5"
     android:title="Color"
     myapp:showAsAction="always"/>
 
   <item android:id="@+id/action_image"
     android:icon="@drawable/ic_image"
+        android:orderInCategory="6"
     android:title="Image"
     myapp:showAsAction="always"/>
 </menu>
